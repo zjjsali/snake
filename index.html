@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .map{
+            width: 800px;
+            height: 600px;
+            background-color:#CCC;
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="map" id="map"></div>
+   <script src="./Food.js"></script>
+   <script src="./Snake.js"></script>
+   <script src="./Game.js"></script>
+    <script>
+    
+        //1.获取地图
+        var map = document.getElementById('map') 
+
+        // 2.创建一个游戏控制器对象
+        var game = new Game(map)
+
+        // 调用游戏控制器的开始游戏方法
+        game.start()
+
+        // --------------------------------------------------------------------------------------------------
+        // // 2.创建了一个食物对象
+        // var f1 = new Food()
+        // // 3.调用渲染render方法，让这个食物显示在地图上
+        // f1.render(map)
+
+
+        // // 创建一个蛇对象
+        // var snake1 = new Snake()
+        // console.log(snake1)
+        // // 调用蛇的render方法渲染
+        // snake1.render(map)
+    </script>
+</body>
+</html>
